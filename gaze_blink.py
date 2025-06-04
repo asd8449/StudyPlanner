@@ -8,7 +8,7 @@ from gaze_metrics import get_metrics  # 사용자 정의 함수
 # 전역 변수 초기화
 fps = 10  # 예시로 1초에 10프레임 들어온다고 가정 (클라이언트 전송 주기에 맞춤)
 prev_time = time.time()
-# 간단 예시: 받은 이미지 디코딩 후 눈 깜빡임, 시선 고정 시간 가짜 결과 리턴
+# 실제 이미지 분석을 통해 눈 깜빡임과 시선 고정 시간을 계산해 반환
 
 def process_frame(image_np):
     global prev_time, fps
