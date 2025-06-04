@@ -12,5 +12,12 @@
     "sqlite3": "^5.1.7",
     "socket.io": "^4.7.5",
     "node-schedule": "^2.2.0"
+  },
+  "devDependencies": {
+    "jest": "^29.6.1",
+    "supertest": "^6.3.3"
+  },
+  "scripts": {
+    "test": "jest"
   }
 }
