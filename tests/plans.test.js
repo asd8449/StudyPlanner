@@ -11,6 +11,7 @@ let token;
 beforeAll(async () => {
   await sequelize.sync({ force: true });
   const user = await User.create({
+    name: 'tester',
     email: 'test@office.kopo.ac.kr',
     passwordHash: 'dummy',
     verified: true

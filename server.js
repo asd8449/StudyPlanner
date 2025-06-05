@@ -33,6 +33,7 @@ const sequelize = new Sequelize({
 
 // User 모델
 const User = sequelize.define('User', {
+  name:        { type: DataTypes.STRING, allowNull: false },
   email:       { type: DataTypes.STRING, unique: true },
   passwordHash:{ type: DataTypes.STRING },
   verified:    { type: DataTypes.BOOLEAN, defaultValue: false },
@@ -187,9 +188,12 @@ app.get('/api/status', (req, res) => {
 
 // 5) 회원가입
 app.post('/api/signup', async (req, res) => {
-  const { email, password } = req.body;
+  const { email, password, name } = req.body;
   if (!email.toLowerCase().endsWith('@office.kopo.ac.kr')) {
     return res.status(400).json({ error: '허용되지 않은 도메인입니다' });
+  }
+  if (!name) {
+    return res.status(400).json({ error: '이름을 입력해주세요' });
   }
   try {
     let user = await User.findOne({ where: { email } });
@@ -202,6 +206,7 @@ app.post('/api/signup', async (req, res) => {
     } else {
       const hash = await bcrypt.hash(password, 12);
       user = await User.create({
+        name,
         email,
         passwordHash: hash,
         verified: false,
