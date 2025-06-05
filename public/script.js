@@ -122,6 +122,7 @@ async function init() {
         method: 'POST',
         body: JSON.stringify({
           email: document.getElementById('signEmail').value.trim(),
+          name: document.getElementById('signName').value.trim(),
           password: document.getElementById('signPwd').value
         })
       });
