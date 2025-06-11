@@ -10,8 +10,11 @@ const nodemailer = require('nodemailer');
 const { Sequelize, DataTypes, Op } = require('sequelize');
 const schedule   = require('node-schedule');
 const http       = require('http');
-const WebSocket = require('ws');
-const { spawn } = require('child_process');
+const WebSocket  = require('ws');
+const { spawn }  = require('child_process');
+
+const PYTHON_PATH = "C:\\Users\\User\\anaconda3\\envs\\teamproject\\python.exe";
+
 const app    = express();
 const server = http.createServer(app);
 const io     = require('socket.io')(server);
@@ -27,15 +30,15 @@ app.use(bodyParser.json());
 // SQLite DB 설정
 const sequelize = new Sequelize({
   dialect: 'sqlite',
-  storage: process.env.DB_STORAGE || './plans.sqlite',
+  storage: './plans.sqlite',
   logging: false
 });
 
 // User 모델
 const User = sequelize.define('User', {
-  name:        { type: DataTypes.STRING, allowNull: false },
   email:       { type: DataTypes.STRING, unique: true },
   passwordHash:{ type: DataTypes.STRING },
+  name:        { type: DataTypes.STRING },
   verified:    { type: DataTypes.BOOLEAN, defaultValue: false },
   verifyToken: { type: DataTypes.STRING, allowNull: true }
 }, { timestamps: false });
@@ -188,12 +191,9 @@ app.get('/api/status', (req, res) => {
 
 // 5) 회원가입
 app.post('/api/signup', async (req, res) => {
-  const { email, password, name } = req.body;
+  const { email, password } = req.body;
   if (!email.toLowerCase().endsWith('@office.kopo.ac.kr')) {
     return res.status(400).json({ error: '허용되지 않은 도메인입니다' });
-  }
-  if (!name) {
-    return res.status(400).json({ error: '이름을 입력해주세요' });
   }
   try {
     let user = await User.findOne({ where: { email } });
@@ -206,7 +206,6 @@ app.post('/api/signup', async (req, res) => {
     } else {
       const hash = await bcrypt.hash(password, 12);
       user = await User.create({
-        name,
         email,
         passwordHash: hash,
         verified: false,
@@ -361,22 +360,6 @@ app.delete('/api/plans/:id', auth, async (req, res) => {
   }
 });
 
-app.delete('/api/plans', auth, async (req, res) => {
-  try {
-    const plans = await Plan.findAll({ where: { user_id: req.userId } });
-    for (const p of plans) {
-      jobs.get(`alarm_${p.id}`)?.cancel();
-      jobs.get(`entry_${p.id}`)?.cancel();
-      jobs.delete(`alarm_${p.id}`);
-      jobs.delete(`entry_${p.id}`);
-    }
-    await Plan.destroy({ where: { user_id: req.userId } });
-    res.json({ message: '전체 삭제됨' });
-  } catch (err) {
-    res.status(500).json({ error: err.message });
-  }
-});
-
 // Socket.IO 인증 및 연결
 io.use((socket, next) => {
   try {
@@ -392,60 +375,57 @@ io.on('connection', socket => {
   socket.join(`user_${socket.userId}`);
 });
 
-if (process.env.NODE_ENV !== 'test') {
-  // Python 스크립트 실행
-  const pyProc = spawn('python', ['gaze_blink.py']);
-  pyProc.stdout.setEncoding('utf8');
-  pyProc.stderr.setEncoding('utf8');
-  pyProc.stderr.on('data', data => console.error('PY ERR:', data));
+// Python 스크립트 실행 (절대경로 PYTHON_PATH 사용)
+const pyProc = spawn(PYTHON_PATH, ['gaze_blink.py']);
+pyProc.stdout.setEncoding('utf8');
+pyProc.stderr.setEncoding('utf8');
+pyProc.stderr.on('data', data => console.error('PY ERR:', data));
 
-  let pyBuffer = '';
+// 버퍼링 변수
+let pyBuffer = '';
 
-  // 기존 Express + Socket.IO 설정 바로 아래에 붙이기
-  // → server 변수는 이미 `const server = http.createServer(app);` 로 존재합니다.
-  const wss = new WebSocket.Server({ server, path: '/monitor_ws' });
+// 기존 Express + Socket.IO 설정 바로 아래에 붙이기
+const wss = new WebSocket.Server({ server, path: '/monitor_ws' });
 
-  wss.on('connection', ws => {
-    console.log('Monitor 클라이언트 접속됨');
+wss.on('connection', ws => {
+  console.log('Monitor 클라이언트 접속됨');
 
-    ws.on('message', msg => {
-      // 클라이언트(브라우저)에서 보낸 프레임(base64) 받아서 Python에 전달
+  ws.on('message', msg => {
+    // 클라이언트(브라우저)에서 보낸 프레임(base64) 받아서 Python에 전달
+    try {
       const data = JSON.parse(msg);
-      if (data.type === 'frame') {
+      if (data.type === 'frame' && typeof data.webcam === 'string') {
         pyProc.stdin.write(data.webcam + '\n');
       }
-    });
-
-    // Python이 stdout에 찍는 JSON 결과를 그대로 클라이언트에 보낸다
-    pyProc.stdout.on('data', chunk => {
-      pyBuffer += chunk;
-      const lines = pyBuffer.split('\n');
-      pyBuffer = lines.pop();  // 마지막은 불완전할 수 있으니 버퍼에 남겨둠
-
-      lines.forEach(line => {
-        if (!line) return;
-        try {
-          const result = JSON.parse(line);
-          if (ws.readyState === WebSocket.OPEN) {
-            ws.send(JSON.stringify(result));
-          }
-        } catch (e) {
-          console.error('Python → JSON 파싱 실패:', e);
-        }
-      });
-    });
-
-    ws.on('close', () => console.log('Monitor 클라이언트 연결 끊김'));
+    } catch (e) {
+      console.error('클라이언트 frame 메시지 파싱 오류:', e);
+    }
   });
-}
+
+  // Python이 stdout에 찍는 JSON 결과를 그대로 클라이언트에 보낸다
+  pyProc.stdout.on('data', chunk => {
+    pyBuffer += chunk;
+    const lines = pyBuffer.split('\n');
+    pyBuffer = lines.pop();  // 마지막 줄은 불완전할 수 있으니 버퍼에 남겨둠
+
+    lines.forEach(line => {
+      if (!line.trim()) return;
+      try {
+        const result = JSON.parse(line);
+        if (ws.readyState === WebSocket.OPEN) {
+          ws.send(JSON.stringify(result));
+        }
+      } catch (e) {
+        console.error('Python → JSON 파싱 실패:', e);
+      }
+    });
+  });
+
+  ws.on('close', () => console.log('Monitor 클라이언트 연결 끊김'));
+});
 
 // 서버 시작
-if (require.main === module) {
-  const PORT = process.env.PORT || 5000;
-  server.listen(PORT, () => {
-    console.log(`서버 실행 중: http://localhost:${PORT}`);
-  });
-}
-
-module.exports = { app, sequelize, User, Plan };
-
+const PORT = process.env.PORT || 5000;
+server.listen(PORT, () => {
+  console.log(`서버 실행 중: http://localhost:${PORT}`);
+});
