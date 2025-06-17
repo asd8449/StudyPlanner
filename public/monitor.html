@@ -58,6 +58,14 @@
 <body>
   <h2>학습 상태 모니터링 시스템</h2>
 
+  
+  <h3>프로그램 다운로드</h3>
+  <ul>
+    <li><a href="click_capture.exe" download>click_capture.exe 다운로드</a></li>
+    <li><a href="myapp://">[ 프로그램 실행하기 ]</a></li>
+  </ul>
+  <p>REG 파일을 실행해서 프로토콜 등록 후 EXE를 실행하세요.</p>
+
   <div class="flex-row">
     <div class="flex-column">
       <label>웹캠</label>
@@ -74,9 +82,8 @@
 
   <canvas id="graph"></canvas>
 
-  <script>
-    
-  </script>
+  <div id="ocrOutput">OCR 결과를 기다리는 중...</div>
+  <script src="/socket.io/socket.io.js"></script>
   <script src="/monitor.js"></script>
 </body>
 </html>

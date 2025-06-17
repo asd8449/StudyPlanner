@@ -1,0 +1,1038 @@
+﻿"timestamp","subject","text"
+"2025-06-12 11:24:48","기타",""
+"2025-06-12 11:24:54","기타","1 택 하세요 i
+iw
+
+전체 화면 =
+
+30"
+"2025-06-12 11:25:01","Web Programming","mon
+ror: Cannot access ""displayStream’ before mon
+. ReferenceError: Cannot access mon
+initialization
+ure (monitor. js:55:23)
+ror: Cannot access ""displayStream’ before mon"
+"2025-06-12 11:25:10","Web Programming","= Rec ¥y 3c @ mp ® Co G
+monitor.html
+: £ EXEE 실 행 하세요.
+디스플레이 ( 스
+: \ 6. |
+hE"
+"2025-06-12 11:25:23","기타","부터 008 결 과 를 받으면 화면 업데이트
+n('ocrResult’, data => {
+
+ole.log( ‘OCR Result received: ', data);
+ata-=:{ username, - timestamp, -ocrText, s
+CR-EIAE
+
+utput.textContent = ~[${data.username}
+=
+
+ectOutput.textContent = “£7: ${data.sL
+| 워 드 ㆍ ( 배 열 쉼 표 ㆍ 연결)
+Array.isArray(data.keywords) && 0363.16
+keywordsOutput.textContent = ~7|¥E: ${
+se {
+
+i a  F- [ 고 F"
+"2025-06-12 11:25:39","Deep Learning","& unt AE T@ X @ 240 | © i
+0) DevTools is now available in Korean
+Don't show again Always match Chrom
+i [0 Elements Console Sources Netwc
+BD @  topv | ® | Y Filter
+© » Uncaught ReferenceError: socket is not def ir
+at monitor. is:32:5
+
+WebSocket connected
+© » Uncaught ReferenceError: Cannot access ‘dis
+
+initialization"
+"2025-06-12 11:25:45","Web Programming","79 displayCanvas.height =
+80
+
+81 setInterval(() => i
+82 videoCtx.drawImage (Vv
+83 const webcamDataUrl
+84 const webcamBase64 =
+85
+
+86 if (displayStream) {
+87 const track = disp
+88 const capture = ne
+89 capture.grabFrame(
+90 displayCtx.drawl
+91 const screenData
+92 const screenBase
+93 screenShot.src =
+94"
+"2025-06-12 11:25:53","기타","Bre ¥ 3c @ xX @ cor 수 6
+684a39e6-ea8c-8005-adad-9870af692cdc
+ChatGPT o4-mini-high v
+»
+// 함수 선 언 5
+function dis
+// .-. 3Z
+}"
+"2025-06-12 11:26:00","Web Programming","</script>
+
+<script src=""/monitor
+</body>
+</html>
++ 2 =="
+"2025-06-12 11:26:14","기타","vent.data);
+.gaze_duration}s\n® +
+${ .blink_count}\n™ +
+ce_detected}\n™ +
+udying} ;
+tion === ‘number’ && isFinite .gaze
+aze_duration) ;
+> 60) gazeHistory.shift();"
+"2025-06-12 11:26:30","기타","a.gaze_duration)) {"
+"2025-06-12 11:26:37","Deep Learning","tContent = 키워드: ${data.keywords.joir
+tContent = ' 키 워드: 매 칭 된 키워드 없음"";
+111 쾌
+
+.splayCapture() {
+
+ait navigator.mediaDevices.getDisplayMe
+~ 플 레이 캡처 2F:"", err);"
+"2025-06-12 11:26:44","Web Programming","un Terminal Help
+coo <> planner.html <> login.htn
+public > 15 monitorjs > ...
+1 const video = 00640
+2 const screenSho
+3 const resultDiv
+4 const graphCanv;
+5 const graphCtx :
+6
+7 const ws = new |
+8 let gazeHistory
+9"
+"2025-06-12 11:26:59","기타","‘monitor _ws');"
+"2025-06-12 11:27:05","기타","택 하세요 =
+wa
+S
+전체 화면 =
+개
+s0ck"
+"2025-06-12 11:27:20","Algorithm","42 NWAV A
+
+74
+
+75 <div class=""flex-
+76 <label>C|A E20
+77 <img id=""screen
+78 </div>
+
+79 </div>
+
+80
+
+81 || <div id=""result"">£
+82
+
+83 <canvas id=""graph"">
+84
+
+85 <script>
+
+86
+
+87 </script>
+
+88 <script src=""/monit"
+"2025-06-12 11:27:31","Web Programming","collect_data
+data
+node_modules |
+public [
+= click_capture.exe
+> index.html
+> monitor.html
+5 monitor.js
+5 scripts :
+# style.css :
+tests ,
+5 plans.testjs ‘
+uploads
+oo ;"
+"2025-06-12 11:27:40","Algorithm","| 스 플레이 ( 스 크 린 샷 )</13661>
+“screenShot™ />
+
+ult™>E4 결 과 를 기다리는 F...</div>
+graph”></canvas)|
+
+""/monitor.js"" ></script>"
+"2025-06-12 11:27:49","Algorithm","ed Be ne I ht
+78 </div>
+79 </div>
+80
+81 <div id=""result"">24 1
+82
+83 <canvas id=""graph""></c
+84
+85 kdiv id=""ocrOutput™>
+86 <script src=""/monitor.
+87 </body>
+88 </html>"
+"2025-06-12 11:28:01","기타","Unt | & unt 스 6 CO) × 246
+요 2 in Korean
+ways match
+Sources
+전체 화면 =
+filter
+socket is no
+공 유 할 탭 선택"
+"2025-06-12 11:28:11","Algorithm","12 s/4aive>
+74
+75 <div class=""flex-column"">
+76 <13661> 디 스 플 레이 (A3ZIA
+77 <img id=""screenShot"" />
+78 </div>
+79 </div>
+80
+81 <div id]'result"">EN 결 과 를 .
+82
+83 <canvas id=""graph""></canvas>
+84
+85 <div id=""ocrOutput"">0CR 결과:
+86 <script src=""/socket.io/sock
+87 <script src=""/monitor.js""></
+88 </body>"
+"2025-06-12 11:28:26","Web Programming","LQ st
+onitorhtml X JS monitorjs X %® facepy
+&@ script Ci\Users\User\Documents'
+exe"" download>click capture.exe 다운로드
+로 그 램 실 행 하기 ]</3></11>
+SS 후 6\6 를 실 행 하 세 요 .</0>"
+"2025-06-12 11:28:32","Java","ir -15Array( @ 문 =
+, 3 of
+else -
+1 테 ot
+1);
+.on(‘'classroomStal
+console.log( ‘Class
+})3
+OCR 결 괴
+<4 GE"
+"2025-06-12 11:28:38","기타",""
+"2025-06-12 11:28:46","Web Programming","&E =
+erverjs <> monitorhtml X JS monitor,
+&@ html > @ body > @ script
+모니터링 시 스 템 </『2>
+tR2E</h1>
+f=""click_capture.exe""” download>click_ca
+F=""myapp://"">[ 프로그램 실 행 하 기 ]</3></11
+실 행 해서 프로토콜 등록 후 66 를 실 행 하세요."
+"2025-06-12 11:28:53","Web Programming","LP Stu
+nitorhtml X JS monitorjs X %® facepy
+2 script
+xe” download>click_capture.exe 다 운 로 드 <
+2 그 램 실 행 하기 ]</3></11>
+SF 6 를 실 행 하 세 요 .</0>"
+"2025-06-12 11:29:05","Web Programming","© monitorhtml X JS monitorjs X
+> displayt Aa ab, * No results"
+"2025-06-12 11:29:27","Web Programming","3 ws.addEventListener( error’, err =>
+1 console.error( ‘Monitor WebSocke
+> 1);
+
+0]
+
+7 socket.on( disconnect’, () => {
+
+3 console.warn( 'Socket.IO disconn
+; | // 연 결 이 끊 어 졌을 때 자 동 으로 재연:
+> Dil
+
+1
+
+2
+
+3 // -- 2) 비디오 및 화면 캡처 로직 (7
+1 let displayStream = null;
+
+>
+
+5 async function startDisplayCapture(
+7 try {
+
+5 17 Sp"
+"2025-06-12 11:29:38","Algorithm","WwW == LT. PUdid. idl ut
+“My 학습 상태: ${data.studyir
+if (typeof data.gaze_duration
+gazeHistory.push(data.gaze c
+if (gazeHistory.length > 60)
+drawGraph() ;
+i);
+Hl
+socket.on('ocrResult’, data => {
+console.log( 'OCR Result receivec
+// data = { username, timestamp,
+// OCR 텍스트
+ocrQutput.textContent = ~[${dats"
+"2025-06-12 11:29:47","기타",""
+"2025-06-12 11:30:13","Deep Learning","sazeHistory = [];
+
+ot.on( connect’, () => {
+
+console. log( ‘Socket.IO connected');
+startVideo();
+
+startDisplayCapture();
+
+버 로 부터 008 결 과 를 받으면 화면 업데이트
+>t.on(""ocrResult’, data => {
+ronsole.log( ""068 Result received:', dat
+// data = { username, timestamp, ocrTex
+// OCR 텍스트
+
+yerOQutput.textContent = ~[${data.usernai"
+"2025-06-12 11:30:30","기타","Vj 7 eee
+History = [1];
+
+n(' connect’, () => {
+
+ole.log( 'Socket.IO connected"");
+tvideo();
+
+tDisplayCapture();
+
+부터 008 결 과 를 받으면 화면 업데이트
+n('ocrResult’, data => {
+
+ole.log( ""OCR Result received:', data);
+ata = { username, timestamp, ocrText, s"
+"2025-06-12 11:30:48","기타","Id('ocrOutput’); // OCR 텍스트 표시
+ntById('subjectOutput'); // 과목 표시
+entById('keywordsOutput'); // 키워드 HA
+mentById('userCountOutput'); // 강의실 헌
+ementById('noiselevelOutput'); // 강의실"
+"2025-06-12 11:30:54","기타","[ MCL Bite cald
+; Cons"
+"2025-06-12 11:31:02","기타","과 를 기다리는 중..."
+"2025-06-12 11:31:07","기타","const keywordsOutput = document.getE
+
+const userCountOutput = document.get
+
+const noiselLevelOutput = document.ge
+
+let gazeHistory = [];
+
+socket.on( ‘connect’, () => {
+console. log( 'Socket.IO connectec
+startvideo();
+startDisplayCapture();
+
+1s
+
+// ㆍ 서 버 로 부 터 -008- ㆍ 결 과 를 ㆍ 받 으 면 ㆍ 화 면 - ㆍ 업 더
+
+socket.on('ocrResult’, data => {
+console. log( ‘OCR Result receivec"
+"2025-06-12 11:31:14","Algorithm","onitorjs - StudyPlanner - Visu... X
+public - 파일 탐색기"
+"2025-06-12 11:31:23","Algorithm","3 // —— 1) Socket.10 연결 —
+4 // HTML IO) <script src=""
+5 const socket = io(); // AH
+6
+7 const resultDiv = document.
+8 const graphCanvas = documer
+9 const graphCtx = graphCanva
+10 const deroutput = document.
+11 const subjectOutput = docunm
+12 const keywordsOutput = docu
+13 const userCountOutput = doc
+14 const noiselLevelOutput = dc
+15 ®
+16
+17 let gazeHistory = [];
+개"
+"2025-06-12 11:31:28","기타","표시
+| 현황: 사용자 수
+기실 현황: 소음 레벨"
+"2025-06-12 11:31:49","Web Programming","17 ws.onopen = () => {
+
+18 console. log( ""WebSocket conne
+19 startVideo();
+
+20 startDisplayCapture();
+
+21 }5
+
+22
+
+23 ws.onmessage = (event) =>
+24 const data = JSON. parse(ever
+25
+
+26 resultDiv.textContent =
+
+27 CA 시선 고정 시간: ${data.
+28 TO 분당 EAH 횟수: ${(
+29 、 @ 얼굴 인식: ${0363.+366
+30 “Wy 학습 상태: ${data.stud
+31"
+"2025-06-12 11:31:56","Web Programming","— Att 노은 AAA] pA A A
+10 const keywordsOutput = 0001
+11 const userCountOutput = doc
+12 const noiselevelOutput = dc
+13
+14 const ws = new WebSocke
+15 let gazeHistory = [];
+16
+17 ws .onopen =() = {
+
+18 console. log( 'WebSocke
+19 startVideo();
+
+20 startDisplayCapture(
+21 }5
+
+22
+
+23 ws.onmessage = (event)
+24 J const data = JSON. par"
+"2025-06-12 11:32:05","기타","}
+
+mp}] 추 출 된 HAE: ${data.ocrText || ' 없
+EE aH
+
+0) {
+
+in("", ')} 』"
+"2025-06-12 11:32:13","기타","© -
+~ | i Console Al assistance &
+@ What's new in Dev]"
+"2025-06-12 11:32:22","기타","Hy 다운로드
+
+lick capture.exe 다운로드
+
+프로그램 실 행 하기 ]
+
+US 실 행 해서 프로토콜 등록 후 6 를 실 행 ㅎ
+| [ 156"
+"2025-06-12 11:47:29","Web Programming","= =
+ers <> monitorhtml X JS monitor.js
+cket.on(‘ocrResult’) callback
+RES
+610 연결 =
+cript src=""/socket.io/socket.io.js""></s
+0()』 // 서 버 에 Socket.10 연결
+= document .getElementById( result’);
+5 = document.getElementById( graph’);
+graphCanvas.getContext('2d"");"
+"2025-06-12 11:47:36","Web Programming","ect_data
+
+a
+
+le_modulé
+lic
+
+ck_captur
+
+dex.html
+
+onitor.htn
+
+onitor.js
+
+riptjs
+
+yle.css 4
+
+5
+
+ans.test.js
+
+oads"
+"2025-06-12 11:47:41","기타",""
+"2025-06-12 11:47:54","Web Programming","© a: + = ㅁ ×
+* 단 @ 1
+1]
+ch Chrome’s language Switch DevTools to Korean
+Network >> ®1 8 : X
+Default levels v | No Issues | £83
+monitor. js:17?
+host :5000/socket . i0/? websocket . is: 119
+lghaweuHEARAG"" failed: Invalid frame header"
+"2025-06-12 11:47:59","Web Programming","h Chrome's language Switch DevTools to Korean
+Network >> 01 @& : X
+Default levels v | No Issues | £83
+monitor.js:i1?
+ost :5000/socket | of? websocket js: Elo)
+lahqweuHEAAAG"" failed: Invalid frame header"
+"2025-06-12 11:48:04","기타","A v Nr “ Le 4
+! 이 든 물 어 보세요
+= EF
+ChatGPTE 실 수 를 할 수 9"
+"2025-06-12 11:48:34","Web Programming","8
+dex.html Js serverjs XxX  {} packagejsor
+|
+18h: 사용자 수"
+"2025-06-12 11:48:43","기타","{
+537"
+"2025-06-12 11:48:54","Web Programming","> monitor.html| JS monitorjs ®"
+"2025-06-12 11:49:32","기타","pr
+}
+}
+hA
+jobs.set(alarm_${p.id},
+alarmInb);
+J
+22l0|= 물 어 보세요
+『 ㅁ 2 ET 9"
+"2025-06-12 11:49:38","기타",""
+"2025-06-12 11:49:45","기타",""
+"2025-06-12 11:49:52","Web Programming","ous> (monitor. js:44:29)
+ous> (index.js:136:20)
+nt (socket. is:553:20)
+(socket. js:540:18)
+t (socket. is:508:22)
+mous> (index.js:136:20)
+118
+eError: Cannot set properties of null (setting mc
+monitor. is:93:34)"
+"2025-06-12 11:50:03","Algorithm","× ¥y 코딩 × @ mpm × @ Conn
+<  Public/monitor ~
+
+1 // monitor.js
+
+2
+
+3 ff ES Bam
+
+4 let displayStream = null;
+
+5
+
+6 // 00 요소 가 져 오기
+
+7 const video = document"
+"2025-06-12 11:52:03","Deep Learning","‘deeplearning’, 'c
+learning’, ""El 2d’, ' 인 공
+=, ‘ai’, ""tensorflow’,
+‘keras’, 'pytorch’, ‘ml’,
+'machinelearning’,
+' 머 신 러 닝 ', ' 학 습 !
+텔 ', '  ) 망 ', enn’, 'mn’
+Bonmafncnmnans! Tonamas!
+무 엇 이 든 물 어 보세요
+FEET 9
+ChatGPT AAS SF A 이 스 니 다 주 요 하 XE"
+"2025-06-12 11:52:10","기타","path: /50CKetT.10 jy),
+tion.host}/monitor_ ws”);
+A"")."
+"2025-06-12 11:52:20","Web Programming","8
+kage.json <> monitor.html X JS monitor,"
+"2025-06-12 11:52:27","기타","× AEC × 학 @)× . ㅎㅎ 2403
+학습 상태 모니터링
+localhost:5000
+
+로
+<) 이 탭 에서 화 면 을 공 유 하
+(oy 메모리 ALE 2 AN SMR"
+"2025-06-12 11:52:33","기타","로 그 램 다운로드
+
+eo click capture.exe 다운로드
+
+o [프로그램 실 행 하기]
+
+6 파 일 을 실 행 해서 프로토콜 등록 후 EXEE 실
+랙"
+"2025-06-12 11:52:39","Web Programming","77 © <img 1d=""screenShot” ㆍ / >
+78 coeg/div>
+
+79 </div>
+
+80
+
+81 <div id=""result"">E2A 결 과 를 기
+82
+
+83 ㆍ <canvas-id=""graph""></canvas>
+84
+
+85 <div id=""ocrOutput"">OCR 결 과 를
+86 <script src=""/socket.io/socke
+87 <script src=""/monitor.js""></s
+88 </body>
+
+89 </html>"
+"2025-06-12 11:55:32","Deep Learning","03 x . @ 레드 x + -
+jHLOK32SkzhUSahemSK2Jwg... ~ 요다 .
+a i
+< > : X"
+"2025-06-12 11:55:39","비학습","16#\ 카 카 오 톡 받은 파 일 \43!3\ 데 이터
+| 않음 취소"
+"2025-06-12 11:55:49","기타","1s @ x or
+fo OF we
+]
+h Chrome's language Switch DevTools to Korean
+= O xX i X
+bs | £83
+® Communit 띠 Quick Docs
+119
+pr
+=: 42"
+"2025-06-12 11:55:55","Algorithm","네 튼 워크 team server 3 홈 15
+는 tl 111
+clipse IDE |
+eg ] i
+®
+4 =v / {"
+"2025-06-12 11:58:13","기타","® x € sponsc X + =
+BB + 다
+영어 한국어 ; X
+1 영어 항상 번역"
+"2025-06-12 12:00:56","기타","-""UTF-8"">
+ge</title>
+""""> 대 전 </3>
+
+""””> 투 기 장 </3>
+ye Beda)"
+"2025-06-12 12:02:13","Web Programming","그 터 oil -+-""1""lo """"1--6 ㄷ
+프로그램 다운로드
+[그
+[그
+REG 파 일 을 실 행 해서 프로토콜 등록 후 EX
+웹캠"
+"2025-06-12 12:02:24","Web Programming","=r T WWI uVl S=quU) « AY Ul dg 2&5, O
+ray (0)}
+
+eceived:
+
+|. 03110265°, fimsefamp: AP5-05-12 12:00:58"",
+losin ""> [ff 전 </Hmn”"" ""> 두 가 JF </Hrve Bs:
+27082 Array (0)}
+
+eceived:
+
+203110265 °, |fimsefamp: AP5-05-12 12:02: 13°,
+""i Hp TE TY [FRE CH THnf THaRRG TF SF
+= LH B2, eubjsof: Web Programming’, keyword
+Al assistance 쓰 What's new X
+
+'s new in DevTools 137
+
+x"
+"2025-06-12 12:19:05","Web Programming","9 <a href=""/"">&7|&</a>
+10 <a href=""/"">4 관 리 </3>
+11 </body>
+
+12 </html>"
+"2025-06-12 12:19:22","Deep Learning","v
+»
+lopers 2025-06 Release
+5 15 available. ~."
+"2025-06-12 12:19:29","Web Programming","KH _Lecture - HearthStone/src/main/resources/template
+File Edit Source Navigate Search Project Ru
+B-ERiYYIBin| noe
+로) Project Explorer x Sve § =
+> 83. Hearthstone [boot]
+
+> i> Lecture-SPRING
+
+> i=2 Lecture-Test
+
+> i=2 Mission-Spring
+
+> 5 Servers
+
+> 3 SpringBootTest [boot] [devtools]
+
+> #2 SpringBootTest1 [boot]
+
+> i= spring-mvc"
+"2025-06-12 12:19:42","Web Programming","학습 © × + - o
+rT 단 ee
+| Korean
+ys match Chrome’s language Switch DevTools to
+ources Network >> o1 @ :
+r Default levels ㅜ | No Issues
+MONITOr, 1502
+sefamp: 2025-08-12 11:55:82°, oorfext: 109 x. @
+90200. . . ~ 요루 . 008 ins > 2 XC, eubjsof: 00550
+싸
+monitor. js:42
+seiamp: 2025-08-72 11:55:39°, oorTfaxt: 1780#' 그"
+"2025-06-12 12:19:54","기타","스터디 X 학 @ Xx locale X"
+"2025-06-12 12:21:07","Web Programming","© localhe X | + = a 5
+rT 단 ee
+rean
+match Chrome's language Switch DevTools to Kor
+ces Network >» o1 @
+Default levels v | No Issues | ㅣ
+MONITOr, 1502
+amp: 25-08-12 11:85:32°, ocorfaxi: 109 x. 8
+2080. . . ~ 요루 Boa 200< > 0 XC, esubjsof: 10550
+monitor. js:42
+amp: 2025-08-72 11:55:89°, oorTaxt: 17680 IF"
+"2025-06-12 12:21:14","Web Programming","¥y 397 × @ nmi × @& 00006
+592cdc
+ublic/monitor ~
+// monitor.js
+// 전역 변수 선언
+let displayStream = null;
+// DOM 요소 가 져 오기
+~onst video = document.getEl:"
+"2025-06-12 12:21:37","Web Programming","oneonncolr Ww SULRCL)S.O 146
+onpacket @ socket.js:500
+(anonymous) @
+indexjs:136
+(anonymous) @
+manager.js:217
+Prom’ 1, then
+(anony:nous) @
+
+F20|= 물 어 보세요
+
+- 군 도 구 으 (
+
+md TIT ALAS 2 A DIATITL 2 1) 소 여느"
+"2025-06-12 12:23:34","Web Programming","gE JS monitor.js
+<> planner.html
+A Js scripts
+<> signup.html
+# style.css
+> uploads
+휴 env
+< .gitignore
+Js alarmService js
+Js appjs
+= db.sqlite
+£ eng.traineddata
+@® face.py"
+"2025-06-12 12:24:05","Algorithm","SSL_KEY_PATH=./path/to/key.pem
+SSL_CERT_PATH=./path/to/cert.pem
+PYTHON_PATH=C: \\Users\\User\\anacoi
+HTTP_PORT=80
+HTTPS_PORT=443
+CE
+. 000 start 혹은 실행 스 크 립 트 로 AH;
+기 동 하면,
+eo HTTP(80)= HTTPS(443)Z 리 디 렉 손
+eo ||[105(443) 로 접속 시 SSL 암 호 화 드"
+"2025-06-12 12:24:11","기타","51 req -new -key key.pem -out csi :
+51 x509 -req -days 365 -in csr.pe¢ :
+일 에 경로 지정 |
+
+복사 2 편집 |
+EY_PATH=. /path/to/key.pem
+=RT_PATH=. /path/to/cert.pem
+N_PATH=C: \\Users\\User\\anaconda: ㅣ
+>081=80
+_PORT=443 ("
+"2025-06-12 12:24:20","기타","bash ㅇ SA
+openssl genrsa -out key.pem ;>
+openssl req -new -key key. per
+openssl x509 -req -days 365 -
+CE
+
+2. .env 파 일 에 경로 지정
+dotenv ㅇ SA
+SSL_KEY_PATH=./path/to/key.p:
+SSI CERT PATH= /path/to/cert."
+"2025-06-12 12:26:45","Algorithm","® < 승 리 X | [Bl Redke X | ¥ 코 딩 기 X
+
+a39e6-ea8c-8005-a4ad-9870af692cdc
+
+v see X Server ~
+Pos Lu.uny Lule
+143
+144 // Python 스크
+145 const pyProc =
+146 pyProc.stdout.
+147 pyProc.stderr.
+148
+149 // WebSocket /
+150 const wss = ne"
+"2025-06-12 12:27:02","기타","["
+"2025-06-12 12:27:11","Web Programming","SocketWithUpgrade [1]
+socket.js:565
+Socket @ socket.js:725
+open @ manager,js:115
+Manager @ manager.js:41
+looky 12 indexjs:33
+(anonymous) @
+
+' 엇 이든 물 어 보세요
+
+= = Q
+
+ChatGPTE 실 수 를 할 수 있습니다. 중요한 정 보 는"
+"2025-06-12 12:28:10","Algorithm","err.stack); res.status(500).json({ errc
+g(CHTTP->HTTPS 리 디 렉 트 : 포트 ${HTTP_POR
+og(CHTTPS 서태: 포트 $ 판 05 PORT} ));"
+"2025-06-12 12:28:19","Web Programming","ner &
+> index.html JS serverjs X env"
+"2025-06-12 12:28:31","기타","619 = fs.readFileS)
+620 = -trim().
+621
+
+622 = 2
+
+623 .forkEach(line {
+
+624 = line.split(
+625 = [1]:
+626 ifs ( ){
+
+627
+
+628 }
+
+629 bs
+
+630
+
+631 = .length;
+632 res_ison({ username. total. «
+PROBLEMS OUTPUT DEBUG CONSOLE TERMINA"
+"2025-06-12 12:30:31","기타","J
+| 무 엇 이든 물 어 보세요
++ 군 도 구 은
+ChatGPTE 실 수 를 할 수 있습니다. 중요한 정보:
+재차 확 인 하세요."
+"2025-06-12 12:31:20","비학습","CEA TERT
+a ~
+Em""
+5
+Na, Dt
+Tt ————
+rus.
+, TS ERAT
+=
+mE
+다 <, mem en
+me ———
+Se e—
+FT 가
+PE
+gam
+ETRE...
+pro 데 1=
+mamma TTT
+Hm
+IEE ASE
+다 |. 22024
+5
+-----"
+"2025-06-12 12:31:31","Algorithm","+
+
++ // ssL 인증서 로드
+
++ const privateKey = fs.readFileSync(S
++ const certificate = fs.readFileSync(S
++ const credentials = { key: privateKey
+| CE
+
+. http.createServer —
+1ttps.creates | ver
+
+Oolnlc OA lo"
+"2025-06-12 12:31:38","기타","| 24
+25
+
+26
+
+27
+
+28
+
+29
+
+30
+
+、. . 겠 ) 31
+32
+
+33
+
+ateServer — -
+tes ver 36
+0 37
+
+vl 38"
+"2025-06-12 12:31:44","기타","iler');
+= require('sequelize’);
+chedule');
+23
+process’);
+5 // << [수정] path 모듈 추가
+er\\anaconda3\\envs\\teamproject\\pytho
+00);
+)(server);
+oads/’ });"
+"2025-06-12 12:31:49","Web Programming","13 const schedule =
+14 const http =
+15 const WebSocket =
+16 const { spawn } =
+17 const path =
+18 const fs = require(
+19
+
+20 + // 환 경 변수
+
+21 + const SSL_KEY_PAT
+22 + const SSL_CERT_PA
+23 +
+
+24 + // SSL 인증서 로드
+25 + const privateKey
+26 + const certificate
+27 + const credentials
+79"
+"2025-06-12 12:32:05","기타","oO =A » 편집
+er.listen(PORT, () => {
+nsole.log(C Alt 실행 =: http://localh
+~222222222222220 >
+다 음 처럼 HRS LCE
+
+복사 편집
+
+NZ
+nct cerver = httn createServer(ann)-
+|= S20 EAS"
+"2025-06-12 12:32:11","기타","> monitors | 0 JRC
+w=
+Emme. —
+4] Ci
+= |
+Fm
+i —
+BE"
+"2025-06-12 12:32:20","기타","- server.listen(PORT, () => {
+-  console.log("" Mt 실행 중: htt
+- 1s
++ server.listen(PORT, () => {
++ console.log(C Mtl 실행 =: htt
++ });
+4 20020
+N
+무 엇 이 든 물 어 보세요"
+"2025-06-12 12:32:33","Algorithm","부 분 을 다 음 처럼 HRs
+
+diff 0 ㅇ 복사
+- const server = http.createServe
++ const server = https.createSery
+- server.listen(PORT, () => {
+
+-  console.log("" Alt 실행 =: htt
+09
+
++ server.listen(PORT, () => {
+
++ console.log(C Mtl 실행 =: htt"
+"2025-06-12 12:32:39","Algorithm","내 실행 중: http://localhost:${PORT}"");
+, O)=>{
+내 실행 중: https://localhost:${PORT} );
+CE
+님
+엇 이든 물 어 보 세요
+-> Co 0 -"
+"2025-06-12 12:32:47","기타","adFileSync(SSL_KEY_PATH, 'utf8');
+adFileSync(SSL_CERT_PATH, 'utf8');
+: privateKey, cert: certificate };
+Users\\User\\anaconda3\\envs\\teamproje
+eServer (app) 3
+ocket.io"") (server);
+est: ‘uploads/® });
+Set();
+
+TERMINAL ~~ PORTS"
+"2025-06-12 12:33:02","Algorithm","EB
+
+29
+
+30 //E
+5 0 => { 31 cons
+| 실행 =: http://local 32 cons
+
+33
+
+34 . // +
+’ 이 = 35 cons
+| 실행 =: https://locs 36
+
+37 . // 5
+
+38 cons
+69999 > 39
+
+40  // 7
+
+41 cons
+/ J 42 let"
+"2025-06-12 12:33:11","기타","= X  ¥ 397 X @® nomi XH
++
+
+n 10.0.26100.4349]
+
+. All rights reserved."
+"2025-06-12 12:33:17","Web Programming","- 신뢰할 수 있는지 왁 인 하 세요. 2
+사 이 트 에 접 속 하지 마세요. 자세히
+ts/Win320penSSL html"
+"2025-06-12 12:33:25","Web Programming","Xx | ¥ 코딩. x @ nm xX @ win
+-9870af692cdc
+X Server ~
+5 const express = require( expre
+6 const bodyParser = require('body-
+7 const Tesseract = require('tesse
+8 const multer = require( ‘multe
+9 const bcrypt = require('bcryp
+10 const jwt = require('jsonw
+11 const crypto = require( ‘crypt
+12 const nodemailer = require('nodem
+19 Be eH He Nada Tersrms es Nan"
+"2025-06-12 12:33:33","기타","® pm x Win3: X ® connec X"
+"2025-06-12 12:33:39","기타","Download Win32/Winé4 OpenSSL today usin;
+File
+Winé4 OpenSSL v3.5.0 Light
+EXE | 버 된
+Winé4 OpenSSL v3.5.0
+EXE | 버 된
+Win32 OpenSSL v3.5.0 Light
+EXE | 버디
+Win32 OpenSSL v3.5.0
+EXE | 버디
+Winé4 OpenSSL v3.5.0 Light for ARM
+(EXPERIMENTAL)
+EXE | Ms"
+"2025-06-12 12:33:44","Web Programming","32 XxX @onpm- Xx © win: Xx | ©
+cdc
+
+er ~
+
+st express = require( express’);
+
+st bodyParser = require('body-parser');
+st Tesseract = require('tesseract.js’)
+st multer = require( 'multer’);
+
+st bcrypt = require('bcrypt’);
+
+st jwt = require('jsonwebtoken"")
+st crypto = require( crypto’);
+
+st nodemailer = require('nodemailer');
+el I Se Nada Tersrms es T= ==="
+"2025-06-12 12:35:21","기타","localh X | + - 0 X
+* 다 & ee
+Deve EB
+a"
+"2025-06-12 12:36:47","기타",""
+"2025-06-12 12:37:45","기타","openssl req -new -key key. per
+-subj ""/C=KR/ST=Seoul/L=Sec
+:: 자가 서명 인증서 MH (3652
+openssl x509 -req -days 365 -
+
+CE
+
+e key.pem : 개 인 키
+* csr.pem : 인증서 서명 요청
+* cert.pem: 자가 서 명 된 인증
+
+2 anv 이 서 저"
+"2025-06-12 12:37:51","기타","Stet -... BE import stre... 를 * 데 이터 25x
+I
+TH+ 8 8 J ="
+"2025-06-12 12:39:32","기타",""
